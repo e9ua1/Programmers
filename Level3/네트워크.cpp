@@ -3,6 +3,7 @@
 using namespace std;
 bool used[200];
 vector<int> adj[200];
+
 void bfs(int st){
     queue<int> Q;
     Q.push(st),used[st]=1;
@@ -14,6 +15,7 @@ void bfs(int st){
         }
     }
 }
+
 int solution(int n, vector<vector<int>> cpt) {
     int ans = 0;
     for(int i=0;i<n;i++)

@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 const int MOD= 1000000007;
+
 int solution(int m, int n, vector<vector<int>> pud) {
     vector<vector<int>> dp(n+1,vector<int>(m+1,0)); dp[1][1]=1;
     for(auto& e:pud) dp[e[1]][e[0]]=-1;

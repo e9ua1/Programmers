@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 int DP[500];
+
 int solution(vector<vector<int>> tg) {
     int cnt=(int)tg.size();
     for(int i=cnt-1;i>=0;--i){
